@@ -15,6 +15,12 @@ document.querySelectorAll('.nav a').forEach((link) => {
 });
 
 const requestSelect = document.querySelector('[name="request"]');
+const selectedPackage = new URLSearchParams(window.location.search).get('package');
+
+if (requestSelect && selectedPackage) {
+  requestSelect.value = selectedPackage;
+}
+
 document.querySelectorAll('.package-choice').forEach((link) => {
   link.addEventListener('click', () => {
     requestSelect.value = link.dataset.package;
