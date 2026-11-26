@@ -53,6 +53,23 @@
   cursor: pointer;
 }
 
+.certificate-gallery {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.certificate-gallery a {
+  display: block;
+  background: #fff;
+}
+
+.certificate-gallery img {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  object-fit: contain;
+}
+
 .hero-credentials {
   max-width: 650px;
   margin: 0 0 28px;
@@ -96,5 +113,9 @@
   .hero-credentials {
     margin-bottom: 18px;
     font-size: 14px;
+  }
+
+  .certificate-gallery {
+    grid-template-columns: 1fr;
   }
 }
