@@ -14,6 +14,13 @@ document.querySelectorAll('.nav a').forEach((link) => {
   });
 });
 
+const requestSelect = document.querySelector('[name="request"]');
+document.querySelectorAll('.package-choice').forEach((link) => {
+  link.addEventListener('click', () => {
+    requestSelect.value = link.dataset.package;
+  });
+});
+
 document.querySelector('[data-lead-form]').addEventListener('submit', (event) => {
   event.preventDefault();
   event.currentTarget.querySelector('.form-status').textContent = 'Форма записи подключается. Пока не отправляйте персональные данные через эту страницу.';

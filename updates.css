@@ -1,0 +1,68 @@
+.service-accordions {
+  margin-top: 58px;
+  border-top: 1px solid var(--line);
+}
+
+.service-accordions details {
+  padding: 23px 0;
+}
+
+.service-accordions summary {
+  font: 500 28px/1.2 var(--serif);
+  letter-spacing: -0.035em;
+}
+
+.accordion-copy {
+  max-width: 860px;
+  padding: 8px 48px 2px 0;
+}
+
+.accordion-copy p,
+.accordion-copy li {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #496259;
+}
+
+.accordion-copy ul,
+.accordion-copy ol {
+  margin: 16px 0 0;
+  padding-left: 22px;
+}
+
+.accordion-copy li {
+  margin: 8px 0;
+}
+
+.accordion-copy .disclaimer {
+  margin-top: 22px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.format-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 860px;
+}
+
+.format-card.featured {
+  transform: none;
+}
+
+.package-choice {
+  cursor: pointer;
+}
+
+@media (max-width: 850px) {
+  .service-accordions {
+    margin-top: 38px;
+  }
+
+  .service-accordions summary {
+    font-size: 24px;
+  }
+
+  .accordion-copy {
+    padding-right: 0;
+  }
+}
