@@ -196,7 +196,6 @@ summary span {
   color: #171717;
 }
 
-.hero-art::before,
 .credentials-grid img,
 .certificate-gallery img {
   filter: grayscale(1);
